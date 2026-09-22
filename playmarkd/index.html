@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1326">
+  <meta name="description" content="PlayMarkd is your gaming bucket list. Save games as you discover them, organize your backlog, track what you play, and rate your favorites.">
+  <meta property="og:title" content="PlayMarkd — Your gaming bucket list">
+  <meta property="og:description" content="Save the games you discover. Know what to play next.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/bucket_list.png">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <title>PlayMarkd — Your gaming bucket list</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1326;--surface:#141f35;--line:#33405a;--text:#f7f8ff;--muted:#b8c2d8;--purple:#b668ff;--cyan:#67d9f4}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit}a:focus-visible{outline:3px solid var(--cyan);outline-offset:4px;border-radius:4px}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px 0}.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-size:1.2rem;font-weight:850;letter-spacing:.01em}.brand img{width:36px;height:36px;border-radius:9px}.nav-links{display:flex;gap:22px;align-items:center;font-size:.92rem;color:var(--muted)}.nav-links a{text-decoration:none}.nav-links a:hover,.footer a:hover{color:var(--text)}
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:48px;padding:68px 0 90px}.eyebrow{color:var(--cyan);font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.18em}.hero h1{font-size:clamp(3.2rem,7vw,6.1rem);line-height:1.02;letter-spacing:-.065em;margin:18px 0 24px}.hero h1 span{color:var(--purple)}.lead{font-size:clamp(1.08rem,2vw,1.35rem);color:var(--muted);max-width:35rem;margin:0 0 30px}.store-row{display:flex;flex-wrap:wrap;gap:8px}.store{display:flex;flex-direction:column;align-items:center;width:174px}.store img{display:block;width:174px;height:66px;object-fit:contain}.store img[src$="app-store-badge.svg"]{width:145px}.store small{color:var(--muted);font-size:.72rem;font-weight:700;letter-spacing:.02em}.hero-visual{position:relative;display:flex;justify-content:center;align-items:center;min-height:520px}.hero-visual:before{content:"";position:absolute;width:78%;aspect-ratio:1;border-radius:50%;background:#8742db;filter:blur(95px);opacity:.3}.hero-visual img{position:relative;width:min(100%,390px);height:auto;max-height:580px;object-fit:contain;border-radius:24px;box-shadow:0 25px 90px #0008}
+    section{padding:76px 0}.section-heading{max-width:680px;margin-bottom:34px}.section-heading h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.13;letter-spacing:-.04em;margin:12px 0}.section-heading p{color:var(--muted);margin:0}.features{border-top:1px solid var(--line)}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{background:linear-gradient(145deg,#1c2942,#121d32);border:1px solid var(--line);border-radius:18px;padding:25px}.feature .number{color:var(--purple);font-size:.8rem;font-weight:800;letter-spacing:.1em}.feature h3{font-size:1.2rem;line-height:1.25;margin:18px 0 8px}.feature p{color:var(--muted);margin:0;font-size:.96rem}
+    .local-note{margin:26px 0 0;padding:18px 20px;border:1px solid var(--line);border-radius:14px;color:var(--muted);background:#111d32}.local-note strong{color:var(--text)}.screens{background:#101a2e;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.screen-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.screen{margin:0}.screen img{display:block;width:100%;height:auto;border-radius:15px;border:1px solid var(--line)}.screen figcaption{padding:12px 3px;color:var(--muted);font-size:.9rem}.closing{text-align:center}.closing h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.04em;margin:0 0 20px}.closing .store-row{justify-content:center}.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:30px 0 40px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}.footer p{margin:0}.footer-links{display:flex;gap:20px;flex-wrap:wrap}.footer a{text-decoration:none}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:18px;padding:54px 0 65px}.hero-visual{min-height:0}.hero-visual img{max-height:490px;width:min(80%,350px)}.feature-grid{grid-template-columns:1fr}.screen-grid{grid-template-columns:repeat(3,minmax(220px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}.screen{scroll-snap-align:start}}
+    @media(max-width:520px){.wrap{width:min(100% - 32px,1120px)}.nav-links{gap:13px;font-size:.82rem}.nav-links a:first-child{display:none}.hero h1{font-size:3.4rem}.hero-visual img{width:min(90%,320px)}section{padding:58px 0}.screen-grid{grid-template-columns:repeat(3,75vw)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#top" aria-label="PlayMarkd home"><img src="assets/logo.svg" alt="">PlayMarkd</a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="#features">Features</a><a href="#screenshots">Screenshots</a><a href="privacy_policy.html">Privacy</a></nav>
+  </header>
+  <main id="top">
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">Your gaming bucket list</div>
+        <h1>Save it now.<br><span>Play it next.</span></h1>
+        <p class="lead">Keep every game you want to play in one place. Capture discoveries, organize your backlog, track your progress, and rate the games you finish.</p>
+        <div class="store-row" aria-label="Store availability">
+          <div class="store"><small>Coming soon</small><img src="assets/app-store-badge.svg" alt="App Store" width="120" height="40"></div>
+          <div class="store"><small>Coming soon</small><img src="assets/google-play-badge.png" alt="Google Play" width="646" height="250"></div>
+        </div>
+      </div>
+      <div class="hero-visual"><img src="assets/bucket_list.png" alt="PlayMarkd backlog showing saved games, filters, and play priorities" width="937" height="1678" fetchpriority="high"></div>
+    </div>
+    <section class="features" id="features">
+      <div class="wrap">
+        <div class="section-heading"><div class="eyebrow">Everything in one list</div><h2>Turn every discovery into your gaming bucket list.</h2><p>A simple place for the games you find and the games you love.</p></div>
+        <div class="feature-grid">
+          <article class="feature"><div class="number">01 / CAPTURE</div><h3>Save games when you find them</h3><p>Add a title yourself or share a link from another app. Keep the source, a note, and the idea together.</p></article>
+          <article class="feature"><div class="number">02 / ORGANIZE</div><h3>Find your next game</h3><p>Search and filter your backlog, set priorities, sort by title or rating, and pull in details through IGDB.</p></article>
+          <article class="feature"><div class="number">03 / TRACK</div><h3>Remember what you played</h3><p>Update a game's status, mark it played, add personal notes, and rate it when you are done.</p></article>
+        </div>
+        <p class="local-note"><strong>Your backlog is always available.</strong> PlayMarkd keeps your saved games and notes on your device, so your list is available locally without an account or cloud setup.</p>
+      </div>
+    </section>
+    <section class="screens" id="screenshots">
+      <div class="wrap">
+        <div class="section-heading"><div class="eyebrow">A closer look</div><h2>Made for your backlog.</h2></div>
+        <div class="screen-grid">
+          <figure class="screen"><img src="assets/quick_share_screen.png" alt="PlayMarkd quick capture of a shared game link" width="941" height="1672" loading="lazy"><figcaption>Capture games from a shared link</figcaption></figure>
+          <figure class="screen"><img src="assets/IGDB_search.png" alt="PlayMarkd game search using IGDB information" width="937" height="1678" loading="lazy"><figcaption>Find details with IGDB search</figcaption></figure>
+          <figure class="screen"><img src="assets/rate_games.png" alt="PlayMarkd rating a completed game" width="937" height="1678" loading="lazy"><figcaption>Rate the games you finish</figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <section class="closing wrap"><h2>Your next game is waiting.</h2><div class="store-row" aria-label="Store availability"><div class="store"><small>Coming soon</small><img src="assets/app-store-badge.svg" alt="App Store" width="120" height="40"></div><div class="store"><small>Coming soon</small><img src="assets/google-play-badge.png" alt="Google Play" width="646" height="250"></div></div></section>
+  </main>
+  <footer class="wrap footer"><p>© 2026 PlayMarkd · Game data and artwork provided by IGDB.com.</p><div class="footer-links"><a href="privacy_policy.html">Privacy policy</a><a href="mailto:dev.miyashiro@gmail.com">Support &amp; contact</a></div></footer>
+</body>
+</html>

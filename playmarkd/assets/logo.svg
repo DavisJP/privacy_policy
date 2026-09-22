@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Solid flat dark navy background matching brand palette #0b1326 -->
+  <rect width="1024" height="1024" fill="#0b1326" />
+
+  <!-- PlayMarkd Logo Play Button with Smooth Rounded Corners & Integrated Bookmark Ribbon Cutout -->
+  <path d="M 326,197 L 421,247 L 421,560 L 530,460 L 639,560 L 639,378 L 814,485 Q 860,512 814,539 L 326,827 Q 254,869 254,787 L 254,238 Q 254,155 326,197 Z" fill="#a855f7" />
+</svg>
